@@ -1,0 +1,67 @@
+.container
+{
+    display: flex;
+    justify-content: space-around;
+
+    img{
+        height: 45px;
+        width: 150px;
+    }
+
+    
+}
+.navlinks
+    {
+        display: flex;
+        justify-content: space-between;
+
+        .links{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+
+    .form
+    {
+        width: 55vw;
+        background: lightblue;
+        border-radius: 5px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .heading
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .inputs
+    {
+        width: 50vw;
+        /* height: 600px; */
+        display: grid;
+        grid-template-columns: 22vw 2fr;
+        gap: 40px;
+        /* grid-template-rows: 2fr; */
+
+    }
+.form-details
+{
+    display:flex;
+    flex-direction: column;
+    
+    input
+    {
+        border: 1px solid gray;
+        padding: 20px;
+        border-radius: 5px;
+    }
+}
+
+#college
+{
+    
+
+}
