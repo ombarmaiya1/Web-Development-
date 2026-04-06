@@ -1,5 +1,56 @@
-#box
+
+:root
 {
-    height: 50px;
-    width: 50px;
+    --main-color : rgb(201, 36, 64);
+    --sub-color :rgb(35, 171, 225);
+    --text-color: rgb(204, 245, 21);
 }
+
+body 
+{
+    background-color: black;
+}
+.div1
+{
+    display: flex;
+    gap: 5px;
+}
+.button
+{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.login{
+    background:var(--main-color);
+}
+
+.registor
+{
+    background-color: var(--sub-color);
+}
+
+.heading
+{
+    color:var(--main-color);
+}
+
+.subheading
+{
+    color: var(--sub-color);
+}
+
+p{
+    color:var(--text-color);
+}
+
+th
+{
+    color: var(--main-color);
+}
+td{
+    color:var(--text-color);
+}
+
+media

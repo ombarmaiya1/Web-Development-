@@ -2,84 +2,184 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnquiryPage</title>
   </head>
+  <link rel="stylesheet" href="style.css" />
   <body>
     <header>
-      <div class="container">
-        <div class="logo"><img src="/enquiryPage/logo-2.png" alt="logo" /></div>
-        <div class="navlinks">
-          <div class="links">Home</div>
-          <div class="links">About</div>
-          <div class="links">Courses</div>
-          <div class="links">IDE</div>
-          <div class="links">Contact US</div>
+      <div id="navbar">
+        <div class="logo">
+          <img id="image" src="logo-2.png" alt="ricr-logo" />
         </div>
-        <div class="contact">
-          <div class="no"></div>
-          <div class="button"></div>
+        <div class="Home"><a href="">Home</a></div>
+        <div class="About"><a href="">About</a></div>
+        <div class="Courses"><a href="">Courses</a></div>
+        <div class="IDE"><a href="">IDE</a></div>
+        <div class="ContactUs"><a href="">Contact Us</a></div>
+        <div id="telCon">
+          <div class="telephone">+91 8889991789</div>
+          <div class="studentLogin">
+            <button id="Button">Student Login</button>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="container">
-        <div class="form">
-          <div class="heading"><h1>Enquiry Form</h1></div>
-          <div>
-            <p>
-              Have questions or need assistance? Fill out the form below to
-              connect with our team and explore your opportunities.
+      <div class="enquiry_form">
+        <h1>Enquiry Form</h1>
+        <p>
+          Have questions or need assistance? Fill out the form below to connect
+          with our team and explore your opportunities.
+        </p>
+
+        <div class="formInfo">
+          <div class="field">
+            <label for="name">Person Name*</label>
+            <input type="text" id="name" placeholder="Person Name" required />
+          </div>
+          <div class="field">
+            <label for="contact">Contact Number*</label>
+            <input
+              type="tel"
+              id="contact"
+              placeholder="Contact Number"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="formInfo1">
+          <div class="field">
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="field">
+            <label for="qualification">Qualification*</label>
+            <input
+              type="text"
+              id="qualification"
+              placeholder="Qualification"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-colInfo">
+          <div class="field">
+            <label for="college">College/School Name*</label>
+            <input
+              type="text"
+              id="college"
+              placeholder="College/School Name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="formInfo">
+          <div class="field">
+            <label for="year">Year*</label>
+            <div class="select-wrap">
+              <select id="year" required>
+                <option value="" disabled selected>Year</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+                <option>Passed Out</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="branch">Branch*</label>
+            <input type="text" id="branch" placeholder="Branch" required />
+          </div>
+        </div>
+
+        <div class="check-group-wrapper">
+          <div class="check-group">
+            <h3>Interested in Which Course*</h3>
+            <label class="check-item"
+              ><input type="checkbox" name="course" value="fullstack" /><span
+                >Full Stack Web Development - Placement Oriented</span
+              ></label
+            >
+            <label class="check-item"
+              ><input type="checkbox" name="course" value="datascience" /><span
+                >Data Science with Python - Placement Oriented</span
+              ></label
+            >
+            <label class="check-item"
+              ><input
+                type="checkbox"
+                name="course"
+                value="dataanalytics"
+              /><span
+                >Data Analytics with Python - Placement Oriented</span
+              ></label
+            >
+            <label class="check-item"
+              ><input type="checkbox" name="course" value="business" /><span
+                >Business Analyst</span
+              ></label
+            >
+            <label class="check-item"
+              ><input type="checkbox" name="course" value="java" /><span
+                >Java Programming</span
+              ></label
+            >
+            <label class="check-item"
+              ><input type="checkbox" name="course" value="python" /><span
+                >Python Programming</span
+              ></label
+            >
+            <label class="check-item"
+              ><input type="checkbox" name="course" value="cpp" /><span
+                >C/C++ Programming</span
+              ></label
+            >
+            <label class="check-item"
+              ><input type="checkbox" name="course" value="other" /><span
+                >Other</span
+              ></label
+            >
+          </div>
+
+          <div class="source-group">
+            <h3>Source of Information</h3>
+            <p class="note">
+              (Only choose 'Received call from institute' if you actually got a
+              call from us)*
             </p>
+            <div class="field">
+              <div class="select-wrap">
+                <select id="source" required>
+                  <option value="" disabled selected>
+                    Source of Information
+                  </option>
+                  <option>Social Media</option>
+                  <option>Google Search</option>
+                  <option>Friend/Relative</option>
+                  <option>Received call from institute</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <h3>Name of Executive*</h3>
+            <div class="field">
+              <div class="select-wrap disabled">
+                <select id="executive" disabled>
+                  <option value="" disabled selected>Name of Executive</option>
+                </select>
+              </div>
+            </div>
           </div>
+        </div>
 
-          <div class="inputs">
-            <div class="form-details">
-              <label for="">Person Name*</label
-              ><input type="text" placeholder="Person Name" />
-            </div>
-
-            <div class="form-details">
-              <label for="">Contact Number*</label
-              ><input type="text" placeholder="Contact Number" />
-            </div>
-            <div class="form-details">
-              <label for="">Email*</label
-              ><input type="text" placeholder="Email*" />
-            </div>
-            <div class="form-details">
-              <label for="">Qulifications*</label
-              ><input type="text" placeholder="Qualifications" />
-            </div>
-            <div class="form-details" id="college">
-              <label for="">College/School Name*</label
-              ><input type="text" placeholder="College/School Name" />
-            </div>
-            <div class="form-details">
-              <label for="">Year*</label
-              ><input type="text" placeholder="Year" />
-            </div>
-            <div class="form-details">
-              <label for="">Branch*</label
-              ><input type="text" placeholder="Branch" />
-            </div>
-          </div>
-          <div class="others">
-            <div class="checkbox">
-              <p>Interested in Which Course*</p>
-              <input type="checkbox"  />
-              <input type="checkbox" />
-              <input type="checkbox" />
-              <input type="checkbox" />
-              <input type="checkbox" />
-              <input type="checkbox" />
-              <input type="checkbox" />
-              <input type="checkbox" />
-            </div>
-            <div class="select"></div>
-          </div>
+        <div class="submit-wrap">
+          <button class="btn-submit" type="submit">Submit</button>
         </div>
       </div>
     </main>
