@@ -1,0 +1,359 @@
+:root {
+  --color-primary:          #c2410c;  /* Brand orange-red */
+  --color-primary-content:  #ffffff;  /* Text on primary background */
+  --color-secondary:        #6b7280;  /* Muted gray text */
+  --color-neutral:          #3f3f46;  /* Dark sections (footer, bars) */
+  --color-neutral-content:  #f4f4f5;  /* Text on dark backgrounds */
+  --color-base-100:         #fff8f1;  /* Warm white page background */
+  --color-base-200:         #f5ede5;  /* Slightly darker warm white */
+  --color-base-300:         #e7d9c9;  /* Borders and dividers */
+  --color-base-content:     #2d1b10;  /* Default dark text */
+  --color-error:            #ef4444;  /* Red for error states */
+  --color-success:          #22c55e;  /* Green for success states */
+}
+
+.height
+{
+    height: 700px;
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+#navbar{
+    background-color: var(--color-primary);
+    height: 64px;
+}
+
+.feedback-btn
+{
+    background-color: var(--color-primary);
+    color: white;
+
+}
+
+#login_Register_button{
+
+    margin-left: auto;
+}
+.RegButton{
+    background-color: var(--color-primary-content);
+    color:var(--color-primary);
+
+}
+
+.RegButton:hover,.LoginButton:hover{
+    background-color: var(--color-primary);
+    color: var(--color-neutral-content);
+     border: 1px solid var(--color-base-300);
+}
+#main_logo{
+    height: 100%;
+    width: fit-content;
+}
+
+#footer{
+
+    
+    height:400px;
+    background-color: var(--color-neutral);
+    margin: none;
+}
+
+#footer_logo{
+
+    height: 100px;
+
+
+    
+}
+
+.boxes{
+
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+    
+
+}
+
+.middle{
+
+    height:1000px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.ul_footer{
+    list-style: none;
+    
+}
+
+.ul_footer a,.footer_text
+{
+    color: white;
+    text-decoration: none;
+}
+.footer_text{
+
+    font-size: small;
+}
+
+
+
+.boxes_underline{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.copyright_disclaimer{
+
+   display: flex;
+    
+    
+}
+.margin_end{
+    margin-left: auto;
+    gap: 20px;
+}
+
+
+.loginBox{
+
+    display: grid;
+    row-gap: 18px;
+    width: 400px;
+    height:fit-content;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: white;
+    border-radius:10px;
+
+}
+.Login_Heading,
+.Register_Heading{
+
+    color: var(--color-primary);
+    font-weight:600;
+}
+
+.login_button
+{
+    background-color: var(--color-primary);
+    color: var(--color-primary-content);
+    width: 100%;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    height: 48px;
+    
+}
+
+    
+   
+.loginField{
+    margin:0 20px;
+}
+
+#Passwordbox,#Emailbox{
+
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--color-base-300);
+    border-radius: 5px;
+    margin-top: 8px;
+
+    
+}
+
+#Remember_ForgotPass{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.PrimaryColourText{
+    color: var(--color-primary);
+}
+
+.RegisterBox{
+    border: 1px solid black;
+    display: grid;
+    row-gap: 20px;
+    background-color: white;
+     width: 400px;
+    height:fit-content;
+    margin-left:auto;
+    margin-right: 110px;
+    margin-top: 60px;
+    border-radius: 10px;
+    
+    
+}
+
+
+.RegistrationTandC{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.OrderNowsearchBox{
+    
+
+    
+    border: 1px solid var(--color-primary);
+    width: 100%;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.OrderNowsearchBox input{
+    
+
+
+    width: 80%;
+    height:40px;
+   
+    border: none;
+    outline: none;
+
+}
+
+.OrderNowsearchBox input::placeholder{
+    
+
+
+  color: var(--color-primary);
+  opacity: 0.5;
+
+}
+
+
+.card1 hotelImage{
+
+    width: 200px;
+    height: 100px;
+}
+
+
+.feedback-bg {
+  background-image: url('feedback-bg.jpg');
+}
+
+.form-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.hero-section {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+          url("sitemap.jpg") center/cover no-repeat;
+        height: 380px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      .hero-section h1 {
+        font-size: 4rem;
+        font-weight: 700;
+      }
+
+      .hero-section h1 span {
+        color: #d35400;
+      }
+
+      .hero-section p {
+        font-size: 1.2rem;
+        color: #ddd;
+      }
+
+      .section-title {
+        color: #b3541e;
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+      }
+
+      .sitemap-links a {
+        display: block;
+        color: #6c757d;
+        text-decoration: none;
+        margin-bottom: 14px;
+        font-size: 1.05rem;
+      }
+
+      .sitemap-links a i {
+        color: #d27a4c;
+        width: 20px;
+        margin-right: 8px;
+      }
+
+      .sitemap-links a:hover {
+        color: #d35400;
+      }
+
+      .footer-banner {
+        background-color: #c94909;
+        color: white;
+        text-align: center;
+        padding: 28px 15px;
+        margin-top: 60px;
+      }
+
+      .footer-banner a {
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+
+      .num
+      {
+        background-color: var(--color-base-100);
+      }
+
+      .box
+      {
+        width: 500px;
+        /* height: 200x; */
+        background-color: var(--color-base-200);
+      }
+
+      .cir
+      {
+        height: 40px;
+        width: 40px;
+      }
+
+      .partnerBG
+      {
+        background-color: var(--color-primary);
+      }
+
+      .pinkText
+      {
+        color: rgb(195, 55, 101);
+      }
+
+    
+

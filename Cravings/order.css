@@ -1,0 +1,208 @@
+:root {
+  --color-primary:          #c2410c;  /* Brand orange-red */
+  --color-primary-content:  #ffffff;  /* Text on primary background */
+  --color-secondary:        #6b7280;  /* Muted gray text */
+  --color-neutral:          #3f3f46;  /* Dark sections (footer, bars) */
+  --color-neutral-content:  #f4f4f5;  /* Text on dark backgrounds */
+  --color-base-100:         #fff8f1;  /* Warm white page background */
+  --color-base-200:         #f5ede5;  /* Slightly darker warm white */
+  --color-base-300:         #e7d9c9;  /* Borders and dividers */
+  --color-base-content:     #2d1b10;  /* Default dark text */
+  --color-error:            #ef4444;  /* Red for error states */
+  --color-success:          #22c55e;  /* Green for success states */
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    background-color: var(--color-primary);
+    height: 64px;
+}
+
+#login_Register_button{
+
+    margin-left: auto;
+}
+.RegButton{
+    background-color: var(--color-primary-content);
+    color:var(--color-primary);
+
+}
+
+.RegButton:hover,.LoginButton:hover{
+    background-color: var(--color-primary);
+    color: var(--color-neutral-content);
+     border: 1px solid var(--color-base-300);
+}
+#main_logo{
+    height: 100%;
+    width: fit-content;
+
+}
+
+.hotelImage{
+
+    height: 180px;
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.hotelImageBox{
+    position: relative;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+   
+    
+    border-radius: 20px;
+   
+   background-color: white;
+    width: auto;
+    height: auto;
+
+}
+
+.HotelDescription{
+
+   
+    font-size: small;
+    color: var(--color-base-content);
+}
+
+
+.cuisines{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    
+}
+
+
+
+span{
+    background-color: var(--color-base-100);
+    margin-left: 5px;
+}
+
+.HotelName{
+
+   font-weight: 700;
+   font-size: medium;
+}
+.ViewMenuButton{
+
+   
+    background-color: var(--color-primary);
+    color: white;
+   
+    width: 94%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.HotelDetailBox
+{
+    margin-left: 10px;
+}
+
+.cuisine{
+
+    background-color: var(--color-base-200);
+    font-size: small;
+    color: var(--color-base-content);
+    font-weight: 300;
+    padding: 5px;
+    
+}
+
+.MenuButton{
+
+    margin: 5px;
+    margin-top: 20px;
+}
+.Rating
+{
+    color: white;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    padding: 12px;
+    position:absolute;
+    right: 10px;
+    top: 10px;
+
+}
+
+.hotels{
+    display: flex;
+    justify-content: center;
+   margin: auto;
+    gap: 20px;
+    width: 70vw;
+   
+    
+}
+
+.OrderNowPageBg{
+    background-color: var(--color-base-200);
+    height: 100vh;
+    width: 100%;
+}
+
+.RestaurantsAvailable
+{
+    width: 70vw;
+    margin: auto;
+    h4{
+        font-weight: 700;
+        font-size:x-large;
+    }
+    
+   
+}
+
+.OrderNowsearchBoxOuterDiv
+{
+    background-color: var(--color-base-100);
+}
+
+.OrderNowsearchBox{
+    
+
+    
+    border: 1px solid var(--color-primary);
+    width: 100%;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.OrderNowsearchBox input{
+    
+
+
+    width: 80%;
+    height:40px;
+   
+    border: none;
+    outline: none;
+
+}
+
+.OrderNowsearchBox input::placeholder{
+    
+
+
+  color: var(--color-primary);
+  opacity: 0.5;
+
+}

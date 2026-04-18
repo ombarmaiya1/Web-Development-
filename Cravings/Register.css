@@ -1,0 +1,26 @@
+#name,
+#mail,
+#phone,
+#password,
+#confirmpassword
+{
+
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    
+    width: 100%;
+}
+.RegisterField{
+
+   margin:0 20px;
+}
+
+body{
+
+    background-image: url(https://cravings.ricr.in/foodTable.webp);
+    background-size: cover;
+    
+}
+
