@@ -12,6 +12,11 @@
   --color-success:          #22c55e;  /* Green for success states */
 }
 
+.color100
+{
+   background-color: var(--color-base-100);
+}
+
 .height
 {
     height: 700px;
@@ -243,7 +248,14 @@ body{
 
 
 .feedback-bg {
-  background-image: url('feedback-bg.jpg');
+  /* background-image: url('images/feedback-bg.jpg'); */
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/feedback-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
 }
 
 .form-card {
@@ -355,5 +367,605 @@ body{
         color: rgb(195, 55, 101);
       }
 
-    
+
+      /* Terms and conditions */
+
+      .terms-of-service {
+  width: 100vw;
+  height: 50vh;
+  background-image: url("./policy.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.terms-overlay {
+  background-color: rgba(0, 0, 2, 0.673);
+  color: var(--color-neutral-content);
+  text-align: center;
+  padding: 3rem 4rem;
+  border-radius: 12px;
+  width: 100vw;
+  height: 50vh;
+}
+
+.terms-overlay h1 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.terms-overlay .intro-text-terms {
+  color: var(--color-neutral-content);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.terms-overlay .update-text {
+  color: var(--color-secondary);
+  font-style: italic;
+  font-size: 0.9 rem;
+}
+
+.terms-icon {
+  font-size: 50px;
+  color: var(--color-primary);
+}
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.terms-of-service-container-beig {
+  background-color: var(--color-base-200);
+  width: 100vw;
+  height: 700px;
+  padding: 4rem;
+}
+
+.terms-container {
+  margin-top: 1-rem;
+  width: 700px;
+  margin: auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+details {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  background: #f9f6f2;
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+summary:hover {
+  background: #f0eae0;
+}
+
+summary i {
+  color: var(--color-primary);
+  margin-right: 0.5rem;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #ccc;
+}
+
+details div {
+  padding: 1rem 1.5rem;
+  background: #fafafa;
+}
+
+details ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  color: var(--text-color);
+}
+
+details li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+.last-para {
+  font-size: 0.84rem;
+}
+.last-para-color {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+.terms-contact {
+  width: 100%;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  height:250px;
+}
+
+.terms-box {
+  text-align: center;
+  color: var(--color-base-200);
+  width: 600px;
+}
+
+.terms-of-icon {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.terms-contact h2 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.terms-contact p {
+  font-size: 0.8rem;
+
+  color: var(--color-base-300);
+}
+
+.terms-email {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* privacy policy */
+
+.privacy-policy {
+  width: 100vw;
+  height: 50vh;
+  background-image: url("./policy.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.privacy-overlay {
+  background-color: rgba(0, 0, 2, 0.673);
+  color: var(--color-neutral-content);
+  text-align: center;
+  padding: 3rem 4rem;
+  border-radius: 12px;
+  width: 100vw;
+  height: 50vh;
+}
+
+.privacy-overlay h1 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.privacy-overlay .intro-text {
+  color: var(--color-neutral-content);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-overlay .update-text {
+  color: var(--color-secondary);
+  font-style: italic;
+  font-size: 0.9 rem;
+}
+
+.policy-icon {
+  font-size: 50px;
+  color: var(--color-primary);
+}
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.privacy-craving {
+  width: 100%;
+  background-color: var(--color-base-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.privacy-policy-container-beig {
+  background-color: var(--color-base-200);
+  width: 100vw;
+  height: 600px;
+  padding: 4rem;
+}
+
+.policy-container {
+  margin-top: 10rem;
+  width: 700px;
+  margin: auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+details {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  background: #f9f6f2;
+  font-weight: bold;
+  list-style: none;
+}
+
+summary:hover {
+  background: #f0eae0;
+}
+
+summary i {
+  color: var(--color-primary);
+  margin-right: 0.5rem;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #ccc;
+}
+
+details div {
+  padding: 1rem 1.5rem;
+  background: #fafafa;
+}
+
+details ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  color: var(--text-color);
+}
+
+details li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.privacy-contact {
+  width: 100%;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.contact-box {
+  text-align: center;
+  color: var(--color-base-200);
+  max-width: 600px;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.privacy-contact h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.privacy-contact p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-base-300);
+}
+
+.contact-email {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+    /* contact  */
+
+    .contact-section {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/contact.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.contact-overlay {
+  background: white;
+  padding: 3rem;
+  border-radius: 8px;
+  width: 500px;
+  margin-left: 7rem;
+  margin-top: 6rem;
+}
+
+.contact-form .form-control {
+  box-shadow: none;
+  border: 1px solid #e9e18c;
+}
+
+.contact-form .form-control:focus {
+  border-color: #ff6600;
+  outline: none;
+  box-shadow: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+
+/* features page index */
+
+
+.overlay {
+ background-image:  url(images/index.background.webp);
+background-repeat: no-repeat;
+background-size: cover;
+width: 100vw;
+height:500px;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  width: 6rem;
+  height: 3.5rem;
+}
+.text {
+  text-align: center;
+  color: #fff;
+  margin-top: 10%;
+}
+.text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.text p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+
+
+.login:hover {
+  border-color: #fff;
+  background-color: rgb(230, 84, 31);
+}
+
+.register {
+  background-color: #fff;
+  color: #e65c00;
+}
+.register:hover {
+  background-color: #e65c00;
+  color: #fff;
+}
+
+.signUp {
+  border: none;
+  background-color: #f16304;
+}
+
+.orderNow {
+  border: none;
+  background-color: #fff;
+}
+.orderNow:hover {
+  background-color: #fff;
+}
+.signUp:hover,
+.signUp:focus,
+.signUp.active,
+.signUp:active,
+.signUp:visited {
+  background-color: #c16121 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.orderNow:focus,
+.orderNow:active,
+.orderNow.active,
+.orderNow:visited {
+  background-color: #fff !important;
+  color: #000 !important;
+  box-shadow: none !important;
+}
+/* Featured Restaurants Section */
+.featured-section {
+  padding: 80px 0;
+  width:auto;
+}
+
+.featured-section .section-header {
+  
+  margin-bottom: 48px;
+}
+
+.featured-section  {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--color-base-content);
+  margin-bottom: 8px;
+}
+
+.featured-section .section-subtext {
+  font-size: 16px;
+  color: var(--color-secondary);
+  margin-bottom: 0;
+}
+
+.restaurant-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-img-wrap .card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rating-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rating-badge i {
+  color: #fbbf24;
+  font-size: 12px;
+}
+
+.restaurant-card .card-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-card .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-base-content);
+  margin-bottom: 10px;
+}
+
+.restaurant-card .card-desc {
+  font-size: 14px;
+  color: var(--color-secondary);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.restaurant-card .card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.restaurant-card .card-tags .badge {
+  background-color: var(--color-base-200);
+  color: var(--color-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.btn-explore {
+  background-color: var(--color-primary);
+  color: var(--color-primary-content);
+  width: 100%;
+  padding: 11px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.btn-explore:hover {
+  background-color: #a53509;
+  color: var(--color-primary-content);
+}
+
+/*login-page*/
+.nav {
+  width: 100vw;
+  height: 4rem;
+}
+.nav-brand {
+  width: 7rem;
+  height: 3rem;
+}
+.nav-img {
+  width: 6rem;
+  height: 3.7rem;
+}
+
+.nav-btn {
+  width: 20rem;
+  height: 4.5rem;
+}
+.main-content-background-image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/login-food.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.login-box {
+  width: 500px;
+  height: 500px;
+  margin-left: 9rem;
+  margin-top: rem;
+}
 
