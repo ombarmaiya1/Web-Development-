@@ -1,35 +1,26 @@
-let fn = document.getElementById('fn');
-let pn = document.getElementById('pn');
-let em = document.getElementById('em');
-let ps = document.getElementById('ps');
-let sm = document.getElementById('sm');
+function submit(e) {
+// e.preventDefault();
 
-sm.addEventListener('submit',submit);
+  const name = document.getElementById("fn").value;
+  const email = document.getElementById("em").value;
+  const number = document.getElementById("pn").value;
+  const password = document.getElementById("ps").value;
 
-function submit(e) 
-{
-    e.preventdefault();
-    let obj = {
-        'name' : fn.value,
-        'phone number' : pn.value,
-        'name' : fn.value,
-        'name' : fn.value
-        
-    }
+  document.querySelectorAll("error").forEach((element) => {
+    element.innerText = " ";
+  });
+
+  if (!/^[A-Za-z ]+$/.test(name)) {
+    document.getElementById("nameError").innerText = "Invalid Name";
+  }
+  if (!/^[A-Za-z.\_\d]+@gmail.com$/.test(email)) {
+    document.getElementById("emailError").innerText = "Invalid email";
+  }
+  if (!/^[(6-9)]\d{9}$/.test(number)) {
+    document.getElementById("numberError").innerText = "Invalid Number";
+  }
+
+  console.log(
+    `name = ${name} , email = ${email} + password = ${password} , number = ${number}`,
+  );
 }
-
-let na = 'SD'
-
-
-if (!/^[A-Za-z\.\d\_]/+$) {
-    
-}
-
-function check(name)
- {
-   const alpha =['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-   name.toLowerCase();
-
-
-}
-
