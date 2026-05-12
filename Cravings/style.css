@@ -12,6 +12,18 @@
   --color-success:          #22c55e;  /* Green for success states */
 }
 
+.footerpng
+{
+  height: 100px;
+  
+  
+}
+
+.grad{
+  /* background: #f0491f; */
+background: linear-gradient(180deg, var(--color-primary) 0%, rgba(255, 227, 227, 1) 90%);
+}
+
 .color100
 {
    background-color: var(--color-base-100);
