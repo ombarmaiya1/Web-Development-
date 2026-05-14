@@ -20,32 +20,33 @@
                         <label for="fullName">Full Name<span class="text-danger">*</span></label>
                         <input type="text" id="fullName" name="fullName" class="form-control"
                             placeholder="Enter your Full Name" required>
-                        <span id="fullNameError" class="text-danger"></span>
+                        <span id="fullNameError" class="text-danger err"></span>
                     </div>
 
                     <div class="d-flex flex-column gap-2">
                         <label for="email">Email Address<span class="text-danger">*</span> </label>
                         <input type="email" id="email" name="email" class="form-control"
                             placeholder="Enter your Email Address" required>
-                        <span id="emailError" class="text-danger"></span>
+                        <span id="emailError" class="text-danger err"></span>
                     </div>
 
                     <div class="d-flex flex-column gap-2">
                         <label for="mobile">Mobile Number<span class="text-danger">*</span></label>
                         <input type="text" id="mobile" name="mobile" class="form-control"
                             placeholder="Enter your Mobile Number" required>
-                        <span id="mobileError" class="text-danger"></span>
+                        <span id="mobileError" class="text-danger err"></span>
                     </div>
 
                     <div class="d-flex flex-column gap-2">
                         <label for="dob">Date of Birth<span class="text-danger">*</span></label>
                         <input type="date" id="dob" name="dob" class="form-control" required
                             placeholder="dd/mm/yyyy required">
-                        <span id="dobError" class="text-danger"></span>
+                        <span id="dobError" class="text-danger err"></span>
                     </div>
 
                     <div class="p-2 mt-2 d-flex gap-5">
-                        <label for="gender" class="form-label fw-bold">Gender</label>
+                        <label for="gender" class="form-label fw-medium">Gender <span
+                                class="text-danger">*</span></label>
                         <div>
                             <input type="radio" name="gender" id="male" value="male" class="form-switch" />
                             <span>Male</span>
@@ -58,7 +59,7 @@
                             <input type="radio" name="gender" id="others" value="others" class="form-switch" />
                             <span>Others</span>
                         </div>
-                        <span class="text-danger small" id="genderError"></span>
+                        <span class="text-danger small err" id="genderError"></span>
                     </div>
                 </section>
 
@@ -67,13 +68,25 @@
                     <div class="d-flex flex-column gap-2">
                         <label for="qualification" class="text-capitalize fw-medium">highest education
                             qualification<span class="text-danger">*</span></label>
-                        <input type="text" name="qualification" id="qualification" class="form-control"
-                            placeholder="Enter your highest education qualification" required>
-
-                        <span id="qualificationError" class="text-danger"></span>
+                        <select name="qualification" id="qualification" class="form-select">
+                            <option value="">Select Qualification</option>
+                            <option value="10">Matriculation</option>
+                            <option value="12">Intermediate</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="UG">Graduation</option>
+                            <option value="PG">Post Graduation</option>
+                        </select>
+                        <span id="qualificationError" class="text-danger err"></span>
                     </div>
+                    <div class="p-2 mt-2">
+                        <label for="marks" class="form-label fw-medium">Percentage/Grade <span
+                                class="text-danger">*</span></label>
+                        <input type="text" name="marks" id="marks" class="form-control" placeholder="90% or A-F" />
+                        <span class="text-danger small err" id="marksError"></span>
+                    </div>
+                </section>
 
-
+                <section>
 
                     <div class="d-flex flex-column gap-2">
                         <label for="course">Preferred Course<span class="text-danger">*</span></label>
@@ -86,7 +99,7 @@
                             <option value="ca/cs">CA/CS</option>
                             <option value="upsc">UPSC</option>
                         </select>
-                        <span id="courseError" class="text-danger"></span>
+                        <span id="courseError" class="text-danger err"></span>
                     </div>
 
 
@@ -110,7 +123,7 @@
                             <input type="checkbox" name="timings" id="weekends" value="weekends" class="form-check" />
                             <span>Weekends</span>
                         </div>
-                        <span class="text-danger small" id="timingsError"></span>
+                        <span class="text-danger small err" id="timingsError"></span>
                     </div>
                 </section>
 
@@ -119,16 +132,19 @@
                         <label for="residentialAddress">Residential Address<span class="text-danger">*</span></label>
                         <input type="text" name="residentialAddress" id="residentialAddress" class="form-control"
                             required>
+                            <span id="residentialAddressError" class="text-danger err"></span>
                     </div>
 
                     <div class="d-flex flex-column gap-2">
                         <label for="city">City<span class="text-danger">*</span></label>
                         <input type="text" name="city" id="city" class="form-control" required>
+                        <span id="cityError" class="text-danger err"></span>
                     </div>
 
                     <div class="d-flex flex-column gap-2">
                         <label for="pinCode">Pin code<span class="text-danger">*</span></label>
                         <input type="number" name="pinCode" id="pinCode" class="form-control" required>
+                        <span id="pinCodeError" class="text-danger err"></span>
                     </div>
 
                 </section>
@@ -138,13 +154,14 @@
                         <label for="guardianName">Full Name <span class="text-danger">*</span></label>
                         <input type="text" id="guardianName" name="guardianName" class="form-control"
                             placeholder="Enter guardian's full name" required>
+                        <span id="guardianNameError" class="text-danger err"></span>
                     </div>
 
                     <div class="d-flex flex-column gap-2">
                         <label for="guardianMobile">Mobile Number <span class="text-danger">*</span></label>
                         <input type="text" id="guardianMobile" name="guardianMobile" class="form-control"
                             placeholder="Enter guardian's mobile number" required>
-                        <span id="guardianMobileError" class="text-danger"></span>
+                        <span id="guardianMobileError" class="text-danger err"></span>
                     </div>
                 </section>
 
