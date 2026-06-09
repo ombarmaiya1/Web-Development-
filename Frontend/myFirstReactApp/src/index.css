@@ -1,11 +1,7 @@
-#div1{
-  background-color: red;
+body{
+  background-color:#0F0F0F !important;
 }
 
-#header{
-  background-color: orange;
-}
-
-#footer{
-  background-color: blanchedalmond;
+a{
+  text-decoration: none !important;
 }
